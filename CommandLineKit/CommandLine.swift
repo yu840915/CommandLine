@@ -49,7 +49,7 @@ private struct StderrOutputStream: TextOutputStream {
  * a `ParseError`. You can then call `printUsage()` to output an automatically-generated usage
  * message.
  */
-public class CommandLine {
+public class CommandLineArgumentParser {
   private var _arguments: [String]
   private var _options: [Option] = [Option]()
   private var _maxFlagDescriptionWidth: Int = 0
